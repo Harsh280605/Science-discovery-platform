@@ -1,0 +1,200 @@
+header {
+    background: #0a0a0a;
+    padding: 20px 0;
+    color: white;
+    transition: background 0.3s ease; 
+}
+
+.video-background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    z-index: -1; 
+}
+
+.video-background video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav {
+    flex-grow: 1; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    justify-content: flex-end; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li {
+    margin-left: 20px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #94d2bd; 
+}
+
+.featured-blog-image {
+    width: 330px; 
+    height: 200px; 
+}
+
+
+footer {
+    background: #030303;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+footer a img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.right-side {
+    text-align: right;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #0a9396;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #94d2bd;
+}
+
+
+@media (max-width: 768px) {
+    header .container,
+    .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    header nav ul li {
+        margin: 10px 0; 
+    }
+}
+
+.quote-section {
+    background-color: #e0f7fa; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a9396;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #007bff; 
+}
+
+.discoveries {
+    background-color: transparent;
+    padding: 50px 20px;
+}
+
+.discoveries h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #005f73;
+}
+
+.discovery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.discovery-card {
+    background-color: transparent;
+    border: 1px solid #0a0a0a;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discovery-card:hover {
+    transform: scale(1.05);
+}
+
+.discovery-card h3 {
+    color: #007bff;
+}
+
+.discovery-card p {
+    margin: 10px 0;
+    color: #f8fbfe;
+}
+
+.upcoming {
+    background-color: transparent;
+    border: 1px solid #050505;
+}
